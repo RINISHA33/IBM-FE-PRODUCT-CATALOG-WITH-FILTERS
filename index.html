@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IBM-FE Product Catalog</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>IBM-FE Product Catalog</h1>
+    </header>
+
+    <section class="filters">
+        <input type="text" id="searchInput" placeholder="Search products..." />
+
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="laptop">Laptop</option>
+            <option value="mobile">Mobile</option>
+            <option value="accessory">Accessory</option>
+        </select>
+
+        <select id="sortFilter">
+            <option value="default">Sort by</option>
+            <option value="lowToHigh">Price: Low to High</option>
+            <option value="highToLow">Price: High to Low</option>
+        </select>
+    </section>
+
+    <main id="productGrid" class="product-grid">
+        <!-- Products will load here via script.js -->
+    </main>
+
+    <!-- Link JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
